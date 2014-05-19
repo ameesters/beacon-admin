@@ -1,0 +1,10 @@
+<template name="monitor">
+
+<div id="traffic" style="overflow: scroll; height:800px; background-color:#000;color:#FFF;">
+<!-- test -->
+{{#each urls}}
+	{{long2ip ipAddress}} - {{request_method}} - {{request_url}}<br>
+{{/each}}
+</div>
+
+</template>
