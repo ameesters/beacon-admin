@@ -11,7 +11,7 @@ Template.monitor.helpers({
     }
 });
 
-Template.monitor.rendered = function () {
+Template.monitor.rerendered = function () {
   console.log("scrolltop is " + $('#traffic').scrollTop());
-  $('#traffic').scrollTop( $('#traffic').prop("scrollHeight") );
+  $('#traffic').scrollTop($('#traffic').prop("scrollHeight"));
 };

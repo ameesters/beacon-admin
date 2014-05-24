@@ -1,9 +1,8 @@
 <template name="monitor">
 
-<div id="traffic" style="overflow: scroll; height:800px; background-color:#000;color:#FFF;">
-<!-- test -->
+<div id="traffic" style="overflow: scroll; height:800px; background-color:#000;color:#FFF;bottom: 0; left: 0;">
 {{#each urls}}
-	{{long2ip ipAddress}} - {{request_method}} - {{request_url}}<br>
+	{{type}} - {{long2ip srcIpAddress}} - {{long2ip destIpAddress}} - {{requestMethod}} - {{requestUrl}}<br>
 {{/each}}
 </div>
 
